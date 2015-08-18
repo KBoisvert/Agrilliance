@@ -1,0 +1,47 @@
+// Firefox has some awkward fieldset styling involving width that interferes with the responsive table. This cannot be overriden without a Firefox-specific hack that we don't provide in Bootstrap:
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}
+#table-produits-in table{
+width: 100%;
+}
+
+#table-produits-in th, #table-produits-in td {
+    padding: 15px;
+}
+
+
+#product-section2 select.form-control, #product-section2 input[type=range]{
+	margin: 2%;
+	width: 50%;
+	display: inline-block;
+}
+
+#product-section2{
+	display: block;
+}
+#product-section2 div label{
+	display: inline-block;
+}
+#product-section2 input, #product-section2 select{
+	display: inline-block;
+}
+#product-section2 form{
+	width: 100%;
+}
+#product-section2 form div{
+	margin: 30px 0;
+	display: block;
+	min-height: 20px;
+}
+
+#product-section2 .placeholder{
+	color: grey;
+}
+#product-section2 select option:first-child{
+	color: grey; 
+	display: none;
+}
+#product-section2 select option{
+	color: #555;
+} /* bootstrap default color*/
