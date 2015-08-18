@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Agrilliance</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+
+<link href="C:/Users/Parents/Documents/Karine/fermier/css/style.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" >
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons 
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57-precomposed.png">
+-->
+  </head>
+
+  <body>
+
+	<section class="container">
+		<h1> Your Products </h1>
+		<table id="table-produits-in" class="table-responsive">
+			<tr>
+				<th>Crop</th>
+				<th>Variety</th>
+				<th>Category</th>
+				<th>Quantity</th>
+				<th>Availability</th>
+				<th>Price (CAD)</th>
+				<th>Modify</th>
+				<th>Delete</th>
+			</tr>
+			<tr>
+				<td>Tomatoes</td>
+				<td>Coeur de boeuf</td>
+				<td>Vegetable</td>
+				<td>20 tons/yr</td>
+				<td>September</td>
+				<td>10$/kg</td>
+				<td>y</td>
+				<td>x</td>
+			</tr>
+
+		</table>
+	</section>
+	<section class="container">
+	<form action="demo_form.asp" id="product-section2">
+		<h3 class="ajout-produit">Add product +</h3>
+		<div>			
+			<label for="crop">Crop</label>
+			<select name="crop" class="form-control placeholder" id="crop">
+			  <option value="">Enter a crop name</option>
+			  <option value="1">Ananas</option>
+			  <option value="2">Avocados</option>
+			</select>
+
+		</div>
+
+		<div>
+			<label for="variety">Variety</label>
+
+			<select name="crop" class="form-control placeholder" id="variety">
+			  <option value="">Enter a variety name</option>
+			  <option value="1">Ananas</option>
+			  <option value="2">Avocados</option>
+			</select>
+		</div>
+
+		<label for="quantity">Quantity</label>
+			<input type="range" name="range" id="range" min="0" max="100" step="1" value="0"/>
+			<output for="range" class="output"></output>
+
+
+		  <div>
+		
+			  <label for="points">value:</label>
+			  <input type="range" name="points" id="points" value="50" min="0" max="100" data-show-value="true">
+			  <input type="submit" data-inline="true" value="Submit">
+			
+			</div>
+
+<input type="text" name="chance" id="chance" class="text" value="50">
+
+<input type="range" id="chance" class="vHorizon" min="0.01" max="98" style="background-color: #00aec8; width: 50%;">
+
+		</form>
+</section>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="C:/Users/Parents/Documents/Karine/fermier/js/script.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+  </body>
+</html>
