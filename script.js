@@ -23,6 +23,33 @@ $(document).ready(function(){
 			.val($range.slider('values', 0) //add $
 			+ ' -  ' + $range.slider('values', 1));
 	});
+//unit
+	$(function(){
+		var $amount = $("#amount-unit"); //cache the price input
+		var $range = $("#unit-range"); //cache the div for the price range
+	  var texts = [
+		  ' ',
+		  'Lbs',
+		  'Kg',
+		  'Oz',
+		  ' '
+	  ];
+
+		$("#unit-range").slider({ // turn price-range input into a slider
+			range: false, //if it's a range it get 2 handles
+			min: 0, //min value
+			max: 5, //max value
+			step: 1,
+			values: [0], //Value to use when the page load
+			slide: function(event, ui){ //when slider use utdate amount element
+				$amount.val(ui.values[0]/* + ' - ' + ui.values[1]*/);
+		
+		}
+		});
+		$amount // set initial value of amount
+			.val($range.slider('values', 0) //add $
+			+ ' -  ' + $range.slider('values', 1));
+	});
 //price
 	$(function(){
 		var $amount = $("#amount-price"); //cache the price input
