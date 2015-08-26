@@ -9,7 +9,7 @@
 
     <!-- Le styles -->
 
-<link href="style.css" rel="stylesheet">
+<link href="C:/Users/Parents/Documents/Karine/fermier/css/style.css" rel="stylesheet">
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" >
 
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
@@ -62,9 +62,10 @@
 		</section>
 		<section class="container section2">
 			<form action="demo_form.asp" id="product-section2">
-				<h3 class="ajout-produit">Add product +</h3>
+				<h3 class="ajout-produit">Add product <span>+</span></h3>
 
-				<div class="product-select select-crop">			
+				<div class="product-select select-crop form-line">
+					<span class="form-info"> i </span>
 					<label for="crop">Crop</label>
 					<select name="crop" class="form-control placeholder" id="crop">
 					  <option value="">Enter a crop name</option>
@@ -73,7 +74,8 @@
 					</select>
 				</div>
 
-				<div class="product-select select-variety">
+				<div class="product-select select-variety form-line">
+					<span class="form-info"> i </span>
 					<label for="variety">Variety</label>
 					<select name="crop" class="form-control placeholder" id="variety">
 					  <option value="">Enter a variety name</option>
@@ -82,36 +84,44 @@
 					</select>
 				</div>
 
-				<div class="product-range select-qty">
+				<div class="product-range select-qty form-line">
 					<p id="qty">
+					<span class="form-info"> i </span>
 						<label for="quantity">Quantity</label>
 						<input type="text" id="amount-qty">
 					</p>
 					<div id="qty-range"></div>
 				</div>
 
-				<div class="product-range range-unit">		
+				<div class="product-range range-unit form-line">		
+				<p id="unit">
+					<span class="form-info"> i </span>
 				  <label for="value">Value:</label>
-				  <input type="range" name="value" id="value" value="50" min="0" max="100" data-show-value="true">			
+				  <input type="text" id="amount-unit" data-show-value="true" data-popup-enabled="true">	
+				</p>	
+				<div id="unit-range"></div>	
 				</div>
 
-				<div class="product-date date-availability">		
-				  <label for="availability">Availability:</label>
+
+
+
+				<div class="product-date date-availability form-line">		
+				<span class="form-info"> i </span>  
+				<label for="availability">Availability:</label>
 				 <input type="date" id="availability" data-show-value="true" />					
 				</div>
 
 
-				<div class="product-range range-price">		
-				  
-				 
+				<div class="product-range range-price form-line">		 
 					<p id="qty">
+						<span class="form-info"> i </span>
 						<label for="price">Price:</label>
 						<input type="text" id="amount-price">
 					</p>
 					<div id="price-range"></div>				
 </div>
 
-				<div class="product-select select-certification">
+				<div class="product-select select-certification form-line">
 					<label for="certification">Certification</label>
 
 					<select name="certification" class="form-control placeholder" id="certification">
@@ -135,7 +145,7 @@
 
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
+<script src="C:/Users/Parents/Documents/Karine/fermier/js/script.js"></script>
 <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.8.3.js"></script>
 
   </body>
