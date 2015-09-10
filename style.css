@@ -1,8 +1,11 @@
 body{
 	background: green;
 }
+body .container{
+	width: 90%;
+}
 
-/******* Tableau du haut *******/
+/******* Tableau du haut voir Bootstrap table responsive: http://getbootstrap.com/css/#tables *******/
 
 #table-produits-in table{
 width: 100%;
@@ -45,6 +48,7 @@ width: 100%;
 }
 #product-section2 .form-line{
 	margin: 40px 0;
+	padding: 10px 0;
 	display: block;
 	float: none;
 }
@@ -89,6 +93,24 @@ width: 100%;
 
 #product-section2 .product-date{
 	display: inline-block;
+}
+
+
+/* Medium devices (desktop, large tablets, less than 1024px include Ipad) */
+@media (max-width: $screen-md-max){
+
+}
+
+
+
+/* Small devices (tablets and large phone, less than 768px) tablet smaller than Ipad*/
+@media screen and (max-width: $screen-sm-max){
+
+}
+
+/* Extra small devices (small phones, less than 481px) 480 load on a landscape Iphone */
+@media (max-width: $screen-xs-max){
+
 }
 
 
