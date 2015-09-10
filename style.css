@@ -1,4 +1,6 @@
-
+body{
+	background: green;
+}
 
 /******* Tableau du haut *******/
 
@@ -21,14 +23,14 @@ width: 100%;
 	display: block;
 }
 #product-section2 .form-info{
-	background-color: orange;
+	background-color: orange; //changer les oranges pour votre orange
 	border-radius: 50%;
 	padding: 5px 10px;
 	text-align: center;
 	margin-right: 2%;
 }
 #product-section2 h3.ajout-produit span{
-	background-color: blue;
+	background-color: blue;  //à changer pour votre bleu
 	padding: 0 5px;
 	margin-left: 1%;
 }
@@ -51,6 +53,8 @@ width: 100%;
 	margin-left: 5%;
 	height: 2px;
 	margin: 30px 0 30px 5%;
+	width: 50%;
+	
 }
 #product-section2  .ui-state-default{
 	background: rgba(255,255,255,0) url("../mapicone.png") no-repeat;
@@ -81,7 +85,11 @@ width: 100%;
 	color: #555;
 } /* bootstrap default color*/
 
-/************************/
-/*****************************/
+/************************************/
+
+#product-section2 .product-date{
+	display: inline-block;
+}
+
 
 
