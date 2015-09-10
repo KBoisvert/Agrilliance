@@ -14,7 +14,7 @@
 
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-
+<link href="C:/Users/Parents/Documents/Karine/fermier/css/jquery-ui-slider-pips.css" rel="stylesheet">
 
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -60,9 +60,12 @@
 
 			</table>
 		</section>
+<!--   -->
 		<section class="container section2">
 			<form action="demo_form.asp" id="product-section2">
 				<h3 class="ajout-produit">Add product <span>+</span></h3>
+
+<!-- Select a CROP   -->
 
 				<div class="product-select select-crop form-line">
 					<span class="form-info"> i </span>
@@ -73,7 +76,7 @@
 					  <option value="2">Avocados</option>
 					</select>
 				</div>
-
+<!-- Varieté de produit  -->
 				<div class="product-select select-variety form-line">
 					<span class="form-info"> i </span>
 					<label for="variety">Variety</label>
@@ -83,34 +86,42 @@
 					  <option value="2">Avocados</option>
 					</select>
 				</div>
-
+<!-- Qty disponible -->
 				<div class="product-range select-qty form-line">
 					<p id="qty">
 					<span class="form-info"> i </span>
 						<label for="quantity">Quantity</label>
 						<input type="text" id="amount-qty">
 					</p>
-					<div id="qty-range"></div>
+					<div class="element-qty"></div>
 				</div>
-
+<!-- Value   -->
 				<div class="product-range range-unit form-line">		
-				<p id="unit">
-					<span class="form-info"> i </span>
-				  <label for="value">Value:</label>
-				  <input type="text" id="amount-unit" data-show-value="true" data-popup-enabled="true">	
-				</p>	
-				<div id="unit-range"></div>	
+					<p id="unit">
+						<span class="form-info"> i </span>
+					  <label for="value">Value:</label>
+					  <input type="text" id="amount-unit" data-show-value="true" data-popup-enabled="true">	
+					</p>	
+					<div class="element-unit"></div>	
 				</div>
-
-
-
-
-				<div class="product-date date-availability form-line">		
+<!-- Calendrier début -->
+				<div class="product-date">		
 				<span class="form-info"> i </span>  
 				<label for="availability">Availability:</label>
-				 <input type="date" id="availability" data-show-value="true" />					
+				</div>
+				<div class="product-date date-availability form-line">
+				 <input type="text" id="availability1" data-show-value="true" placeholder="Start date" />					
+				</div>
+<!-- Calendrier fin  -->
+
+				<div class="product-date date-availability form-line">		
+				 <input type="text" id="availability2" data-show-value="true" placeholder="End date" />	<!-- type text avec JQuery pour compatibilité IE -->	
 				</div>
 
+
+
+
+<!-- Prix  -->
 
 				<div class="product-range range-price form-line">		 
 					<p id="qty">
@@ -118,9 +129,19 @@
 						<label for="price">Price:</label>
 						<input type="text" id="amount-price">
 					</p>
-					<div id="price-range"></div>				
-</div>
+					<div class="element-price"></div>				
+				</div>
 
+<!-- Valeur Prix  -->
+
+				<div class="product-range range-unit form-line">		 
+					<p id="unitprice">
+						<input type="text" id="amount-unit-price">
+					</p>
+					<div class="element-unit-price"></div>				
+				</div>
+
+<!-- Certification  -->
 				<div class="product-select select-certification form-line">
 					<label for="certification">Certification</label>
 
@@ -133,6 +154,9 @@
 
 				<input type="submit" data-inline="true" value="Add product">	
 				<button>Next page </button>
+
+<br>
+
 			</form>
 		</section>
     <!-- Le javascript
@@ -143,9 +167,10 @@
 <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 
-
+<script src="C:/Users/Parents/Documents/Karine/fermier/js/jquery-ui-slider-pips.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="C:/Users/Parents/Documents/Karine/fermier/js/script.js"></script>
+
 <script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.8.3.js"></script>
 
   </body>
